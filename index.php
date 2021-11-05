@@ -165,7 +165,7 @@ function updateHero()
     
     global $conn;
     if ($conn->query($sql) === TRUE) {
-        echo "Hero updated successfully";
+        echo "Hero updated successfully\n";
     } else {
         echo "Error updating record: " . $conn->error;
     }
@@ -178,7 +178,7 @@ function updateHero()
     }
     $sql2 .= " WHERE hero_id = '$id'";
     if ($conn->query($sql2) === TRUE) {
-        echo "Hero updated successfully";
+        echo "Abilities updated successfully";
     } else {
         echo "Error updating record: " . $conn->error;
     }
