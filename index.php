@@ -198,7 +198,7 @@ function deleteHero()
 
     global $conn;
     if ($conn->query($sql) === TRUE) {
-        echo "Record deleted successfully";
+        echo "Record deleted successfully" . "<br>";
     } else {
         echo "Error deleting record: " . $conn->error;
         return;
